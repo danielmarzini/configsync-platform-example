@@ -11,17 +11,3 @@ roleRef:
   kind: ClusterRole
   name: edit
   apiGroup: rbac.authorization.k8s.io
----
-kind: RoleBinding
-apiVersion: rbac.authorization.k8s.io/v1
-metadata:
-  name: syncs-repo-mci
-  namespace: zoneprinter
-subjects:
-- kind: ServiceAccount
-  name: ns-reconciler-zoneprinter
-  namespace: config-management-system
-roleRef:
-  kind: ClusterRole
-  name: view
-  apiGroup: networking.gke.io
