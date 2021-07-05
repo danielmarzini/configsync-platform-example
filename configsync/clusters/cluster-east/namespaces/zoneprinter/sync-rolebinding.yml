@@ -15,7 +15,7 @@ roleRef:
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: syncs-repo
+  name: syncs-repo-mci
   namespace: zoneprinter
 subjects:
 - kind: ServiceAccount
