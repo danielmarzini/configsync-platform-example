@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  labels:
+    owner: platform-team
+  name: hard-limit
+  namespace: gamestore
+spec:
+  hard:
+    cpu: "10"
+    memory: 2Gi
+    pods: "50"
