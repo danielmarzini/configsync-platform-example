@@ -4,6 +4,7 @@ metadata:
   labels:
     cluster: cluster-east
     owner: platform-team
+    istio.io/rev: asm-195-2
   name: gamestore
 ---
 apiVersion: v1
